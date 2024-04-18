@@ -157,7 +157,12 @@ export const MuiButton = () => {
           aria-label="text formatting"
           value={formats}
           onChange={handleFormatChange}
-          exclusive
+          // exclusive // single or multiple
+          // size='large'
+          // orientation='vertical'
+          color='primary'
+          
+          
         >
           <ToggleButton value={'bold'}>
             <FormatBoldIcon />
@@ -170,6 +175,7 @@ export const MuiButton = () => {
           </ToggleButton>
         </ToggleButtonGroup>
       </Stack>
+      
     </Stack>
   );
 };
