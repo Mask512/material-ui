@@ -34,7 +34,7 @@ export const MuiSelect = () => {
           value={countries}
           onChange={handleChangeMulti}
           fullWidth
-          helperText="Can choose more than one"
+          helperText={countries.length === 0 ? "Required" : "Can choose more than one"}
           SelectProps={{multiple: true}}
           size='small'
           color='secondary'
