@@ -1,10 +1,22 @@
-import { Box } from '@mui/material';
+import { Box, Stack, Divider } from '@mui/material';
 
-// Box is change for div for default , use as wrapper tag
+/** 
+    Box is change for div for default , use as wrapper tag
+
+    Stack is used to manage layout in one dimension , vertical or horizontal (flex)
+**/
 
 export const MuiLayout = () => {
   return (
-    <>
+    <Stack
+      sx={{
+        border: '1px solid',
+      }}
+      direction={'row'} // default column , row | column | reverse
+      spacing={2} // gap
+      divider={<Divider orientation='vertical' flexItem/>}
+
+    >
       <Box
         component="section" // props for change tag
         sx={{
@@ -27,7 +39,10 @@ export const MuiLayout = () => {
         width={'100px'}
         bgcolor={'success.light'}
         p={2} // padding 16px
-      > MUI System CSS Properties</Box>
-    </>
+      >
+        {' '}
+        MUI System CSS Properties
+      </Box>
+    </Stack>
   );
 };
