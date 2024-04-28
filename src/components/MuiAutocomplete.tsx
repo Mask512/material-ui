@@ -16,7 +16,7 @@ const skillsOptions = skills.map((skill, index) => ({
 export const MuiAutocomplete = () => {
   const [value, setValue] = useState<string | null>(null);
   console.log(value);
-  const [skill, setSkill] = useState<Skill | null>(null)
+  const [skill, setSkill] = useState<Skill | null>(null);
   console.log(skill);
 
   return (
@@ -31,7 +31,7 @@ export const MuiAutocomplete = () => {
         // freeSolo // for input outside options
       />
 
-<Autocomplete
+      <Autocomplete
         options={skillsOptions}
         renderInput={(params) => <TextField {...params} label="Skills" />}
         value={skill}
