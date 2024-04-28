@@ -1,4 +1,4 @@
-import { Box, Stack, Divider, Grid } from '@mui/material';
+import { Box, Stack, Divider, Grid, Paper } from '@mui/material';
 
 /** 
     Box is change for div for default , use as wrapper tag
@@ -15,11 +15,16 @@ import { Box, Stack, Divider, Grid } from '@mui/material';
     sm : tablet
     md: desktop
     lg & xl : larger monitors
+
+    Paper : Create surface / visual hierarchy
 **/
 
 export const MuiLayout = () => {
   return (
-    <>
+    <Paper sx={{
+        padding: '32px'
+    }}
+    elevation={8}>
       <Stack
         sx={{
           border: '1px solid',
@@ -89,6 +94,6 @@ export const MuiLayout = () => {
           <Box bgcolor={'primary.light'} p={2} >Item 4</Box>
         </Grid>
       </Grid>
-    </>
+    </Paper>
   );
 };
