@@ -28,8 +28,10 @@
 // import { MuiSnackbar } from "./components/MuiSnackbar";
 // import { MuiDialog } from "./components/MuiDialog";
 // import { MuiProgress } from "./components/MuiProgress";
+// import { MuiSkeleton } from "./components/MuiSkeleton";
 
-import { MuiSkeleton } from "./components/MuiSkeleton";
+import { MuiLoadingButton } from "./components/MuiLoadingButton";
+
 
 
 
@@ -66,7 +68,8 @@ function App() {
       {/* <MuiSnackbar/> */}
       {/* <MuiDialog/> */}
       {/* <MuiProgress /> */}
-      <MuiSkeleton />
+      {/* <MuiSkeleton /> */}
+      <MuiLoadingButton/>
     </div>
   );
 }
