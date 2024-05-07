@@ -30,13 +30,12 @@
 // import { MuiProgress } from "./components/MuiProgress";
 // import { MuiSkeleton } from "./components/MuiSkeleton";
 // import { MuiLoadingButton } from "./components/MuiLoadingButton";
+// import { MuiDate } from './components/MuiDate';
 
-import { MuiDate } from "./components/MuiDate";
-
+import { MuiTabs } from './components/MuiTabs';
 
 function App() {
   return (
-    
     <div className="App">
       {/* <MuiTypography /> */}
       {/* <MuiButton /> */}
@@ -70,7 +69,8 @@ function App() {
       {/* <MuiProgress /> */}
       {/* <MuiSkeleton /> */}
       {/* <MuiLoadingButton/> */}
-      <MuiDate />
+      {/* <MuiDate /> */}
+      <MuiTabs />
     </div>
   );
 }
