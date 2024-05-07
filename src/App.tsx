@@ -32,8 +32,10 @@
 // import { MuiLoadingButton } from "./components/MuiLoadingButton";
 // import { MuiDate } from './components/MuiDate';
 // import { MuiTabs } from './components/MuiTabs';
+// import { MuiTimeline } from "./components/MuiTimeline";
 
-import { MuiTimeline } from "./components/MuiTimeline";
+import { MuiMasonry } from "./components/MuiMasonry";
+
 
 
 function App() {
@@ -73,7 +75,8 @@ function App() {
       {/* <MuiLoadingButton/> */}
       {/* <MuiDate /> */}
       {/* <MuiTabs /> */}
-      <MuiTimeline/>
+      {/* <MuiTimeline/> */}
+      <MuiMasonry/>
     </div>
   );
 }
